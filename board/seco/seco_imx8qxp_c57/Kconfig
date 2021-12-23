@@ -1,0 +1,14 @@
+if TARGET_SECO_IMX8QXP_C57
+
+config SYS_BOARD
+	default "seco_imx8qxp_c57"
+
+config SYS_VENDOR
+	default "seco"
+
+config SYS_CONFIG_NAME
+	default "seco_imx8qxp_c57"
+
+source "board/seco/common/Kconfig"
+
+endif

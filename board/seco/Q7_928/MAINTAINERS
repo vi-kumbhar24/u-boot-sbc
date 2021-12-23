@@ -1,0 +1,11 @@
+MX6QDL_SECO_Q7_928 MODULE
+M:	Davide Cardillo <davide.cardillo@seco.com>
+S:	Maintained
+F:	board/seco/Q7_928/q7_928.c
+F:	board/seco/Q7_928/env_conf.c
+F:	board/seco/Q7_928/pin_muxing_Q7_928.h
+F:	board/seco/Q7_928/ddr_config_4x256.h
+F:	board/seco/Q7_928/ddr_config_8x512.h
+F:	configs/mx6qdl_seco_Q7_928_1G_4x256M_defconfig
+F:	configs/mx6qdl_seco_Q7_928_4G_8x512M_defconfig
+

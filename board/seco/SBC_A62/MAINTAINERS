@@ -1,0 +1,6 @@
+MX6QDL_SECO_SBC_A62 BOARD
+M:	Davide Cardillo <davide.cardillo@seco.com>
+S:	Maintained
+F:	board/seco/sbc_a62.c
+F:	include/configs/mx6qdl_seco_sbc_a62.h
+F:	configs/mx6qdl_seco_SBC_A62_1G_2x256M_defconfig

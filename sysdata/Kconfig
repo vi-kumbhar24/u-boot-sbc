@@ -1,0 +1,19 @@
+# SPDX-License-Identifier: GPL-2.0+
+#
+# (C) Copyright 2004-2006
+# Davide Cardillo, SECO SpA, seco.com
+
+
+menuconfig SECO_SYSTEM_DATA
+	bool "Seco System Data"
+	help
+	  SECO System Data Manager
+
+
+if SECO_SYSTEM_DATA
+
+config SECO_SYSDATA_IN_MMC
+	bool "System Data is placed in MMC"
+	depends on SECO_SYSTEM_DATA
+
+endif # menu SECO_SYSTEM_DATA

@@ -1,0 +1,32 @@
+
+choice
+	prompt "SECO Memory Settings"
+
+config SECOMX6_256MB_1x256
+	bool "1x256MB"
+
+
+config SECOMX6_512MB_2x256
+	bool "2x256MB"
+
+
+config SECOMX6_1GB_2x512
+	bool "2x512MB"
+
+
+config SECOMX6_1GB_4x256
+	bool "4x256MB"
+
+
+config SECOMX6_2GB_4x512
+	bool "4x512MB"
+
+
+config SECOMX6_4GB_8x512
+	bool "8x512MB"
+
+
+config SECOMX6_DDR_DYNAMIC_SIZE
+	bool "dynamic size"
+
+endchoice

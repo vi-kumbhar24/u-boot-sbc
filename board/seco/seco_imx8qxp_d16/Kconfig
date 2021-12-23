@@ -1,0 +1,14 @@
+if TARGET_SECO_IMX8QXP_D16
+
+config SYS_BOARD
+	default "seco_imx8qxp_d16"
+
+config SYS_VENDOR
+	default "seco"
+
+config SYS_CONFIG_NAME
+	default "seco_imx8qxp_d16"
+
+source "board/seco/common/Kconfig"
+
+endif

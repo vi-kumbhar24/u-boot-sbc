@@ -1,0 +1,6 @@
+SECO i.MX8QXP MEK BOARD
+M:	Tommaso Merciai <tommaso.merciai@seco.com>
+S:	Maintained
+F:	board/seco/imx8qxp_mek/
+F:	include/configs/seco_imx8qxp_c57.h
+F:	configs/seco_imx8qxp_c57_defconfig

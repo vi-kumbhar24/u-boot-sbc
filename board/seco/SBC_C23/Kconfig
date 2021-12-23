@@ -1,0 +1,16 @@
+if TARGET_MX6SX_SECO_SBC_C23
+
+config SYS_BOARD
+	default "SBC_C23"
+
+config SYS_VENDOR
+	default "seco"
+
+config SYS_CONFIG_NAME
+	default "mx6sx_seco_sbc_c23"
+
+config SYS_TEXT_BASE
+	default 0x87800000
+
+endif
+

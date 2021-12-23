@@ -1,0 +1,75 @@
+
+#include <asm/arch/iomux.h>
+#include <asm/mach-imx/iomux-v3.h>
+#include <asm/arch/mx6-pins.h>
+
+#define NUM_OF_PADS(x)   (ARRAY_SIZE(x)/2)
+
+#define GPIO_LVDS  (PAD_CTL_HYS | PAD_CTL_PUS_22K_UP | \
+		PAD_CTL_SPEED_LOW | PAD_CTL_DSE_40ohm | PAD_CTL_SRE_FAST)
+
+#define GPIO_LVDS  (PAD_CTL_HYS | PAD_CTL_PUS_22K_UP | \
+		PAD_CTL_SPEED_LOW | PAD_CTL_DSE_40ohm | PAD_CTL_SRE_FAST)
+
+#define UART_PAD_CTRL  (PAD_CTL_PUS_100K_UP |                   \
+		PAD_CTL_SPEED_MED | PAD_CTL_DSE_40ohm |                 \
+		PAD_CTL_SRE_FAST  | PAD_CTL_HYS)
+
+#define USDHC_PAD_CTRL (PAD_CTL_PUS_47K_UP |                    \
+		PAD_CTL_SPEED_LOW | PAD_CTL_DSE_80ohm |                 \
+		PAD_CTL_SRE_FAST  | PAD_CTL_HYS)
+
+#define ENET_PAD_CTRL  (PAD_CTL_PUS_100K_UP |                   \
+		PAD_CTL_SPEED_MED | PAD_CTL_DSE_40ohm | PAD_CTL_HYS)
+
+#define ENET_CLK_PAD_CTRL  (PAD_CTL_SPEED_MED | \
+		PAD_CTL_DSE_120ohm   | PAD_CTL_SRE_FAST)
+
+#define SPI_PAD_CTRL (PAD_CTL_HYS | PAD_CTL_SPEED_MED | \
+		PAD_CTL_DSE_40ohm | PAD_CTL_SRE_FAST)
+
+#define I2C_PAD_CTRL	(PAD_CTL_PUS_100K_UP |			\
+			PAD_CTL_SPEED_MED | PAD_CTL_DSE_40ohm | PAD_CTL_HYS |	\
+			PAD_CTL_ODE | PAD_CTL_SRE_FAST)
+
+#define PC MUX_PAD_CTRL(I2C_PAD_CTRL)
+
+#define EPDC_PAD_CTRL    (PAD_CTL_PKE | PAD_CTL_SPEED_MED |     \
+		PAD_CTL_DSE_40ohm | PAD_CTL_HYS)
+
+#define OTG_ID_PAD_CTRL (PAD_CTL_PKE | PAD_CTL_PUE |		\
+	PAD_CTL_PUS_47K_UP  | PAD_CTL_SPEED_LOW |		\
+	PAD_CTL_DSE_80ohm   | PAD_CTL_SRE_FAST  | PAD_CTL_HYS)
+
+
+#define I2C_PAD MUX_PAD_CTRL(I2C_PAD_CTRL)
+
+#define TOUCH_PAD   (PAD_CTL_PKE | PAD_CTL_PUE | PAD_CTL_PUS_22K_UP )
+
+
+#define WEIM_NOR_PAD_CTRL (PAD_CTL_PKE | PAD_CTL_PUE |          \
+        PAD_CTL_PUS_100K_UP | PAD_CTL_SPEED_MED |               \
+        PAD_CTL_DSE_40ohm   | PAD_CTL_SRE_FAST)
+
+#define DIO_PAD_CTRL  (PAD_CTL_PKE | PAD_CTL_PUE |              \
+        PAD_CTL_PUS_100K_DOWN | PAD_CTL_SPEED_MED |             \
+        PAD_CTL_DSE_34ohm | PAD_CTL_HYS | PAD_CTL_SRE_FAST)
+
+#define DIO_PAD_CFG   (MUX_PAD_CTRL(DIO_PAD_CTRL) | MUX_MODE_SION)
+
+#define BOARD_REV_PAD_CTRL  (PAD_CTL_PKE | PAD_CTL_PUE |                \
+        PAD_CTL_PUS_100K_DOWN | PAD_CTL_SPEED_MED |             \
+        PAD_CTL_DSE_34ohm | PAD_CTL_HYS | PAD_CTL_SRE_FAST)
+
+#define BOARD_REV_PAD_CFG   (MUX_PAD_CTRL(BOARD_REV_PAD_CTRL) | MUX_MODE_SION)
+
+#define QSPI_PAD_CTRL1	\
+	(PAD_CTL_SRE_FAST | PAD_CTL_SPEED_HIGH | \
+	 PAD_CTL_PKE | PAD_CTL_PUE | PAD_CTL_PUS_47K_UP | PAD_CTL_DSE_40ohm)
+
+#define WDOG_PAD_CTRL (PAD_CTL_PUE | PAD_CTL_PKE | PAD_CTL_SPEED_MED |	\
+	PAD_CTL_DSE_40ohm)
+
+
+#define LCD_PAD_CTRL    (PAD_CTL_HYS | PAD_CTL_PUS_100K_UP | PAD_CTL_PUE | \
+	PAD_CTL_PKE | PAD_CTL_SPEED_MED | PAD_CTL_DSE_40ohm)

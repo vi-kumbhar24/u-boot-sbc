@@ -1,0 +1,14 @@
+if TARGET_SECO_IMX8MQ_C12
+
+config SYS_BOARD
+	default "seco_imx8mq_c12"
+
+config SYS_VENDOR
+	default "seco"
+
+config SYS_CONFIG_NAME
+	default "seco_imx8mq_c12"
+
+source "board/seco/common/Kconfig"
+
+endif

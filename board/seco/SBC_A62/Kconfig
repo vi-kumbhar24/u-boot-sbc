@@ -1,0 +1,32 @@
+
+if TARGET_MX6QDL_SECO_SBC_A62
+
+config SYS_BOARD
+        default "SBC_A62"
+
+config SYS_VENDOR
+        default "seco"
+
+config SYS_CONFIG_NAME
+        default "mx6qdl_seco_sbc_a62"
+
+config SYS_TEXT_BASE
+    default 0x17800000
+
+endif
+
+if TARGET_MX6QDL_SECO_SYS_A62_10
+
+config SYS_BOARD
+	default "SBC_A62"
+
+config SYS_VENDOR
+	default "seco"
+
+config SYS_CONFIG_NAME
+	default "mx6qdl_seco_sys_a62_10"
+
+config SYS_TEXT_BASE
+	default 0x17800000
+
+endif

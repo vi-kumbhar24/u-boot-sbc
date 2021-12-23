@@ -1,0 +1,23 @@
+if TARGET_SECO_IMX8QM_C26
+
+config SYS_BOARD
+	default "seco_imx8qm_c26"
+
+config SYS_VENDOR
+	default "seco"
+
+config SYS_CONFIG_NAME
+	default "seco_imx8qm_c26"
+
+config  SECO_IMX8QM_C26_2GB 
+        bool "Support i.MX8QM C26 with 2GB of RAM"
+
+config  SECO_IMX8QM_C26_4GB 
+        bool "Support i.MX8QM C26 with 4GB of RAM"
+
+config  SECO_IMX8QM_C26_8GB 
+        bool "Support i.MX8QM C26 with 8GB of RAM"
+
+source "board/seco/common/Kconfig"
+
+endif

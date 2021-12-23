@@ -1,0 +1,32 @@
+
+if TARGET_MX6SX_SECO_SBC_B08
+
+config SYS_BOARD
+        default "SBC_B08"
+
+config SYS_VENDOR
+        default "seco"
+
+config SYS_CONFIG_NAME
+        default "mx6sx_seco_sbc_b08"
+
+config SYS_TEXT_BASE
+    default 0x87800000
+
+endif
+
+if TARGET_MX6SX_SECO_SYS_B08
+
+config SYS_BOARD
+        default "SBC_B08"
+
+config SYS_VENDOR
+        default "seco"
+
+config SYS_CONFIG_NAME
+        default "mx6sx_seco_sys_b08"
+
+config SYS_TEXT_BASE
+    default 0x87800000
+
+endif

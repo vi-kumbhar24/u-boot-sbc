@@ -1,0 +1,8 @@
+MX6SX_SECO_SBC_C23 BOARD
+M:	Mathanraj Murugan <mathan.raj@seco.com>
+S:	Maintained
+F:	board/seco/SBC_C23/sbc_c23.c
+F:	include/configs/mx6sx_seco_sbc_c23.h
+F:	configs/mx6sx_seco_SBC_C23_defconfig
+
+

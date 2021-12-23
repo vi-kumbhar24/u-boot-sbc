@@ -1,0 +1,12 @@
+if TARGET_SECO_IMX8MQ_C20 
+
+config SYS_BOARD
+	default "seco_imx8mq_c20"
+
+config SYS_VENDOR
+	default "seco"
+
+config SYS_CONFIG_NAME
+	default "seco_imx8mq_c20"
+
+endif

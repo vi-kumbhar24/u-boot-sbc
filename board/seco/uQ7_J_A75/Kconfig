@@ -1,0 +1,18 @@
+
+if TARGET_MX6QDL_SECO_uQ7_J_A75
+
+config SYS_BOARD
+        default "uQ7_J_A75"
+
+config SYS_VENDOR
+        default "seco"
+
+config SYS_CONFIG_NAME
+        default "mx6qdl_seco_uq7_j_a75"
+
+config SYS_TEXT_BASE
+    default 0x17800000
+
+endif
+
+

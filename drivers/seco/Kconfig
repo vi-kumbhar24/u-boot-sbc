@@ -1,0 +1,9 @@
+menu "Embedded Controller"
+
+config DM_SECO_ECTRL
+	bool "Enable Embedded Controller"
+	depends on DM_I2C
+	help
+		This device allows you to use the Embedded Controller present on board.
+
+endmenu

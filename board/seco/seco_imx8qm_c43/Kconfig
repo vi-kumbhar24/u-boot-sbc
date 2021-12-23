@@ -1,0 +1,23 @@
+if TARGET_SECO_IMX8QM_C43
+
+config SYS_BOARD
+	default "seco_imx8qm_c43"
+
+config SYS_VENDOR
+	default "seco"
+
+config SYS_CONFIG_NAME
+	default "seco_imx8qm_c43"
+
+config  SECO_IMX8QM_C43_2GB 
+        bool "Support i.MX8QM C43 with 2GB of RAM"
+
+config  SECO_IMX8QM_C43_4GB 
+        bool "Support i.MX8QM C43 with 4GB of RAM"
+
+config  SECO_IMX8QM_C43_8GB 
+        bool "Support i.MX8QM C43 with 8GB of RAM"
+
+source "board/seco/common/Kconfig"
+
+endif
